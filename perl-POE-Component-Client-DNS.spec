@@ -13,6 +13,7 @@ Requires:	perl
 BuildRequires:	perl-devel
 BuildRequires:  perl-POE
 BuildRequires:  perl-Net-DNS
+Buildroot:	%{_tmppath}/%{name}-root
 URL:		http://search.cpan.org/dist/%{real_name}
 Source:		%{real_name}-%{version}.tar.bz2
 BuildArch:	noarch
