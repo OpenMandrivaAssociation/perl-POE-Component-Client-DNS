@@ -1,7 +1,7 @@
 %define real_name	POE-Component-Client-DNS
 %define name		perl-%{real_name}
-%define version		1.00
-%define release		%mkrel 5
+%define version		1.01
+%define release		%mkrel 1
 
 Summary:	POE::Component::Client::DNS - non-blocking, concurrent DNS requests
 Name:		%{name}
