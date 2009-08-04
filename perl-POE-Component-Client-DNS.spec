@@ -1,5 +1,5 @@
 %define upstream_name	 POE-Component-Client-DNS
-%define upstream_version 1.03
+%define upstream_version 1.04
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	POE::Component::Client::DNS - non-blocking, concurrent DNS requests
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:  perl-POE
 BuildRequires:  perl-Net-DNS
