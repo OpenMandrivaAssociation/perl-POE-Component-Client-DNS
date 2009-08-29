@@ -1,5 +1,5 @@
 %define upstream_name	 POE-Component-Client-DNS
-%define upstream_version 1.04
+%define upstream_version 1.050
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
