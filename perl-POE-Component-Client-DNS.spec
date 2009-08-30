@@ -11,8 +11,9 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:  perl-POE
-BuildRequires:  perl-Net-DNS
+BuildRequires:  perl(Net::DNS)
+BuildRequires:  perl(POE)
+BuildRequires:  perl(Test::NoWarnings)
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
