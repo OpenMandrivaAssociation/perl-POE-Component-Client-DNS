@@ -1,15 +1,15 @@
 %define upstream_name	 POE-Component-Client-DNS
-%define upstream_version 1.051
+%define upstream_version 1.053
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	POE::Component::Client::DNS - non-blocking, concurrent DNS requests
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/POE/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/POE/POE-Component-Client-DNS-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Net::DNS)
@@ -115,4 +115,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Sep 08 2005 Olivier Thauvin <nanardon@mandriva.org> 0.9802-1mdk
 - First mandriva package
+
 
