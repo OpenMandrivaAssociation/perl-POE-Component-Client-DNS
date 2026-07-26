@@ -1,15 +1,13 @@
 %define upstream_name	 POE-Component-Client-DNS
-%define upstream_version 1.054
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.054
+Release:	2
 
 Summary:	POE::Component::Client::DNS - non-blocking, concurrent DNS requests
 License:	GPL
 Group:		Development/Perl
 Url:		https://github.com/rcaputo/poe-component-client-dns
-Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCAPUTO/POE-Component-Client-DNS-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCAPUTO/POE-Component-Client-DNS-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ DNS requests. Using POE, it allows other tasks to run while waiting for name
 servers to respond.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -62,9 +60,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon Aug 03 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 1.30.0-1mdv2010.0
 + Revision: 407990
-- rebuild using %%perl_convert_version
-
-* Thu Feb 19 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.03-1mdv2009.1
+- rebuild using %1.054 Thu Feb 19 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.03-1mdv2009.1
 + Revision: 342825
 - update to new version 1.03
 
